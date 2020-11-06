@@ -16,5 +16,9 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/madelyn/')
+def madelyn():
+    return render_template('self.html')
+
 if __name__=="__main__":
     app.run(debug=True)
